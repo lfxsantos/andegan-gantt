@@ -1,0 +1,25 @@
+<div ng-controller="HomeController" ng-init="initHome()">
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            Ocupação&nbsp;
+            <button type="button" class="btn btn-danger" uib-tooltip="Adicionar Recurso" tooltip-placement="bottom">
+                <i class="fa fa-plus"></i>
+            </button>
+        </div>
+        <div class="panel-body">
+            <div gantt
+                 api="ganttOptions.api"
+                 data="ganttData"
+                 current-date="ganttOptions.currentDate"
+                 daily="ganttOptions.daily"
+                 from-date="ganttOptions.fromDate"
+                 to-date="ganttOptions.toDate">
+                <gantt-table headers="ganttOptions.tableHeaders"></gantt-table>
+                <gantt-tooltips date-format="ganttOptions.dateFormat"></gantt-tooltips>
+                <gantt-progress enabled="true"></gantt-progress>
+                <gantt-dependencies enabled="true" read-only="false"></gantt-dependencies>
+            </div>
+        </div>
+    </div>
+</div>

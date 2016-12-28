@@ -10,5 +10,14 @@ angular.module('andegan').config(function ($stateProvider, $urlRouterProvider) {
             data: {
                 requiredlogin: false
             }
+        })
+        .state('home', {
+            url: '/home',
+            templateUrl: 'views/home/home.html',
+            reloadOnSearch: false,
+            controller: 'LoginController',
+            data: {
+                requiredlogin: false
+            }
         });
 });

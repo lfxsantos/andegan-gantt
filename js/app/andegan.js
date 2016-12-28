@@ -8,8 +8,6 @@ angular.module('andegan', [
     .run(function (amMoment) {
         amMoment.changeLocale('pt-br');
     });
-
-
 function dtLanguageConfig (DTDefaultOptions) {
     DTDefaultOptions.setLanguage({
         "emptyTable": "Nenhum registro encontrado",
