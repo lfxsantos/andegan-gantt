@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html ng-app="andegan">
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="manifest.json">
+    <title>Team Task</title>
+
+    <link href="css/lib/bootstrap.min.css" rel="stylesheet">
+    <link href="css/lib/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/lib/angular-datatables.min.css">
+    <link rel="stylesheet" href="css/lib/datatables.bootstrap.min.css">
+    <link rel="stylesheet" href="css/lib/responsive.dataTables.min.css">
+
+    <link rel="stylesheet" href="css/lib/angular-gantt.min.css">
+    <link rel="stylesheet" href="css/lib/angular-gantt-plugins.min.css">
+
+    <link rel="stylesheet" href="css/lib/angular-ui-tree.min.css">
+    <link rel="stylesheet" href="css/lib/bootstrap-inverse-buttons.css">
+
+    <link href="css/andegan.css" rel="stylesheet">
+</head>
+<body ng-class="loginBody">
+<div class="m-app-loading" ng-animate-children>
+    <style type="text/css">
+        div.m-app-loading {
+            position: fixed;
+        }
+
+        div.m-app-loading div.animated-container {
+            background-color: #101010;
+            bottom: 0;
+            left: 0;
+            opacity: 1.0;
+            position: fixed;
+            right: 0;
+            top: 0;
+            z-index: 999999;
+        }
+
+        /* Used to initialize the ng-leave animation state. */
+        div.m-app-loading div.animated-container.ng-leave {
+            opacity: 1.0;
+            transition: all linear 200ms;
+            -webkit-transition: all linear 200ms;
+        }
+
+        /* Used to set the end properties of the ng-leave animation state. */
+        div.m-app-loading div.animated-container.ng-leave-active {
+            opacity: 0;
+        }
+
+        div.m-app-loading div.messaging {
+            color: #FFFFFF;
+            font-family: monospace;
+            left: 0;
+            margin-top: -37px;
+            position: absolute;
+            right: 0;
+            text-align: center;
+            top: 50%;
+        }
+
+        div.m-app-loading div.messaging .team {
+            color: #17BEFF;
+        }
+        div.m-app-loading div.messaging .task {
+            color: #29D311;
+        }
+
+        div.m-app-loading h1 {
+            font-size: 26px;
+            line-height: 35px;
+            margin: 0 0 20px 0;
+        }
+
+        div.m-app-loading p {
+            font-size: 18px;
+            line-height: 14px;
+            margin: 0;
+        }
+    </style>
+
+    <div class="animated-container">
+        <div class="messaging">
+            <h1>
+                Andegan Gantt
+            </h1>
+            <p>
+                Carregando componentes. Aguarde.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="mainsec" ui-view>
+
+</div>
+
+<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="js/lib/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="js/lib/dataTables.responsive.min.js"></script>
+<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/lib/respond.min.js"></script>
+<script type="text/javascript" src="js/lib/angular.min.js"></script>
+<script type="text/javascript" src="js/lib/ui-bootstrap-tpls.min.js"></script>
+<script type="text/javascript" src="js/lib/angular-ui-router.min.js"></script>
+<script type="text/javascript" src="js/lib/angular-resource.min.js"></script>
+<script type="text/javascript" src="js/lib/angular-filter.min.js"></script>
+<script type="text/javascript" src="js/lib/angular-animate.min.js"></script>
+<script type="text/javascript" src="js/lib/angular-sanitize.min.js"></script>
+<script type="text/javascript" src="js/lib/angular-mongolab.js"></script>
+<script type="text/javascript" src="js/lib/waiting-for.js"></script>
+
+<script type="text/javascript" src="js/lib/moment.min.js"></script>
+<script type="text/javascript" src="js/lib/moment-with-locales.min.js"></script>
+<script type="text/javascript" src="js/lib/moment-range.min.js"></script>
+<script type="text/javascript" src="js/lib/angular-moment.min.js"></script>
+<script type="text/javascript" src="js/lib/momentjs-business.js"></script>
+
+<script type="text/javascript" src="js/lib/angular-datatables.min.js"></script>
+<script type="text/javascript" src="js/lib/angular-datatables.bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/lib/jsPlumb-2.2.6-min.js"></script>
+<script type="text/javascript" src="js/lib/angular-gantt.min.js"></script>
+<script type="text/javascript" src="js/lib/angular-gantt-plugins.min.js"></script>
+<script type="text/javascript" src="js/lib/angular-ui-tree.min.js"></script>
+
+
+<script type="text/javascript" src="js/app/andegan.js"></script>
+<script type="text/javascript" src="js/app/router.js"></script>
+<script type="text/javascript" src="js/app/services.js"></script>
+<script type="text/javascript" src="js/app/directives.js"></script>
+<script type="text/javascript" src="js/app/components/login.js"></script>
+<script type="text/javascript" src="js/app/components/home.js"></script>
+<script type="text/javascript" src="js/app/components/modal/modal.js"></script>
+
+</body>
+</html>
