@@ -1,7 +1,7 @@
 angular.module('andegan', [
     'ui.router', 'ngResource', 'mongolabResourceHttp', 'ui.bootstrap', 'angular.filter', 'angularMoment',
-    'datatables', 'ngAnimate', 'gantt', 'gantt.table', 'gantt.tooltips', 'gantt.overlap', 'gantt.dependencies',
-    'gantt.progress', 'ngSanitize'
+    'datatables', 'ngAnimate', 'gantt', 'gantt.table', 'gantt.tooltips','gantt.movable','gantt.overlap', 'gantt.dependencies',
+    'gantt.progress', 'ngSanitize','gantt.resizeSensor'
 ])
     .constant('MONGOLAB_CONFIG', {API_KEY: 'YXgR-q92vuVCKlSm-ji3nplDTE7rHIQh', DB_NAME: 'andegan'})
     .run(dtLanguageConfig)

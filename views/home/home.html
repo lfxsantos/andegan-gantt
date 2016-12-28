@@ -20,8 +20,15 @@
                 <gantt-table headers="ganttOptions.tableHeaders"></gantt-table>
                 <gantt-tooltips date-format="ganttOptions.dateFormat"></gantt-tooltips>
                 <gantt-progress enabled="true"></gantt-progress>
-                <gantt-dependencies enabled="true" read-only="false"></gantt-dependencies>
+                <gantt-resize-sensor enabled="true">
+                </gantt-resize-sensor>
+                <gantt-movable enabled="true"></gantt-movable>
             </div>
+        </div>
+        <div class="panel-footer">
+            <input type="date" ng-model="dtInicio">
+            <input type="date" ng-model="dtFim">
+            <button type="button" class="btn btn-success" ng-click="filtrar()">Filtrar</button>
         </div>
     </div>
 </div>
